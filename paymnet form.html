@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Payment Form</title>
+		<link href="styles/form.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<form>
+		<div class="img_div">
+		<h1>Payment form</h1>
+		
+		<p><strong>Required fields are followed by<abbr title="required">*</abbr></strong>.</p>
+		
+		<section>
+		<fieldset id="one">
+		<legend class="three">Contact info</legend>
+		<div>
+		<fieldset id="two">
+		<legend class="four">Title</legend>
+		<ul class="none">
+			<li>
+			<label for="mr">
+			<input type="radio" id="mr" name="mr" value="mr.">Mr
+			</label>
+			</li>
+			<li>
+			<label for="mrs">
+			<input type="radio" id="mrs" name="mr" value="mrs.">Mrs
+			</label>
+			</li>
+		</ul>
+		</fieldset>
+		</div>
+		<div>
+		<label for="name">Name <strong><abbr title="required">*</abbr></strong>
+		<input type="text" id="name" name="username">
+		</label>
+		</div>
+		<div>
+		<label for="mail">Email <strong><abbr title="required">*</abbr></strong>
+		<input type="email" id="mail" name="mailid">
+		</label>
+		</div>
+		<div>
+		<label for="pass">Password <strong><abbr title="required">*</abbr></strong>
+		<input type="password" id="pass" name="passid">
+		</label>
+		</div>
+		</fieldset>
+		</section>
+		<section>
+		<fieldset id="four">
+		<legend class="three">Payment information</legend>
+		<div>
+		<label for="card">Card type<strong><abbr title="required">*</abbr></strong></label>
+		<select class="opt" id="card" name="usercard">
+		<option value="visa">Visa</option>
+		<option value="mastercard">Mastercard</option>
+		<option value="paypal">Paypal</option>
+		</select>
+		</div>
+		<div>
+		<label for="number">Card Number<strong><abbr title="required">*</abbr></strong>
+		<input type="text" id="number" name="cardnumber">
+		</label>
+		</div>
+		<div>
+		<label for="expire">Expiration date<strong><abbr title="formatted as mm/yy(reqired)">*</abbr></strong>
+		<input type="text" id="expire" name="date">
+		</label>
+		</div>
+		</fieldset>
+		</section>
+		<div></div>
+		<div>
+		<button class="b1" type="submit">Validate the payment</button>
+		</div>
+		</div>
+		</form>
+	</body>
+
+</html>
